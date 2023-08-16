@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.26.4)
 project(VulkanTutorial VERSION 0.0.1)
 
 set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 find_package(Vulkan REQUIRED)
 
 add_subdirectory(lib/glfw-3.3.8)
