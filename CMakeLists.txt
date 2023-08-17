@@ -8,6 +8,11 @@ find_package(Vulkan REQUIRED)
 add_subdirectory(lib/glfw-3.3.8)
 add_subdirectory(lib/glm)
 
-add_executable(${PROJECT_NAME} src/main.cpp)
+add_executable(
+  ${PROJECT_NAME}
+  src/main.cpp
+  src/hello_triangle.hpp
+  src/hello_triangle.cpp
+)
 
 target_link_libraries(${PROJECT_NAME} glm glfw Vulkan::Vulkan)
